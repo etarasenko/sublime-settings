@@ -37,3 +37,7 @@ git-clone https://github.com/buymeasoda/soda-theme.git "Theme - Soda"
 git-clone https://github.com/Kronuz/SublimeCodeIntel.git SublimeCodeIntel
 git-clone https://github.com/SublimeLinter/SublimeLinter.git SublimeLinter
 git-clone https://github.com/SublimeText/jQuery.git jQuery
+
+# Add application launcher
+mkdir -p ~/.local/share/applications
+ln -fs ~/.config/sublime-text-2/Packages/User/sublime-text-2.desktop ~/.local/share/applications/

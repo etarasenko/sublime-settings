@@ -7,6 +7,14 @@ h1() {
     echo -e "\n\e[32m$1\e[00m"
 }
 
+h1 "Installing font Source Code Pro:"
+URL="http://sourceforge.net/projects/sourcecodepro.adobe/files/latest/download"
+wget ${URL} -O /tmp/SourceCodePro.zip
+mkdir -p ~/.fonts/SourceCodePro
+unzip -jo /tmp/SourceCodePro.zip "*.otf" -d ~/.fonts/SourceCodePro
+rm /tmp/SourceCodePro.zip
+fc-cache -fv
+
 h1 "Installing requirements for SublimeLinter:"
 sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo apt-get update

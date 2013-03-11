@@ -41,3 +41,7 @@ git-clone https://github.com/SublimeText/jQuery.git jQuery
 # Add application launcher
 mkdir -p ~/.local/share/applications
 ln -fs ~/.config/sublime-text-2/Packages/User/sublime-text-2.desktop ~/.local/share/applications/
+
+# Remove PHP template snippets conflicted with Django template snippets
+"/opt/Sublime Text 2/sublime_text" --command exit
+rm -f PHP/*.sublime-snippet

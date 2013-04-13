@@ -18,7 +18,7 @@ fc-cache -fv
 h1 "Installing requirements for SublimeLinter:"
 sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo apt-get update
-sudo apt-get install -y nodejs npm
+sudo apt-get install -y nodejs
 sudo npm install -g csslint jshint
 
 git-clone() {

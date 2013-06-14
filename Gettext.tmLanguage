@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>po</string>
+	</array>
+	<key>name</key>
+	<string>Gettext</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>#,\s+fuzzy.*</string>
+			<key>name</key>
+			<string>invalid.fuzzy.po</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>#.*</string>
+			<key>name</key>
+			<string>comment.line.po</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(msgctxt|msgid|msgstr)\b</string>
+			<key>name</key>
+			<string>keyword.control.po</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.po</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>"</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.po</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.double.po</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.po</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>A line that does not begin with # or "</string>
+			<key>match</key>
+			<string>^[^#"].+$</string>
+			<key>name</key>
+			<string>invalid.illegal.po</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.po</string>
+</dict>
+</plist>

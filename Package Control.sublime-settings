@@ -1,0 +1,15 @@
+{
+	"installed_packages":
+	[
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-csslint",
+		"SublimeLinter-flake8",
+		"SublimeLinter-jshint",
+		"Theme - Soda"
+	],
+	"repositories":
+	[
+		"https://github.com/SublimeCodeIntel/SublimeCodeIntel/tree/development"
+	]
+}

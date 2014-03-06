@@ -1,5 +1,6 @@
-Extract `Sublime Text 2 <http://www.sublimetext.com/2>`_ to ``/opt`` directory.
+Sublime Text 3 settings for comfortable Python development
+==========================================================
 
-Installation::
+Run the following command in console for download and install settings::
 
-    $ DIR=~/.config/sublime-text-2/Packages/User && git clone https://github.com/etarasenko/sublime-settings.git $DIR && $DIR/install.sh
+    $ DIR=~/.config/sublime-text-3/Packages/User && git clone https://github.com/etarasenko/sublime-settings.git $DIR && $DIR/install.sh

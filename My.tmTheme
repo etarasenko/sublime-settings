@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>name</key>
@@ -181,7 +181,7 @@
 				<key>background</key>
 				<string>#F92672</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string />
 				<key>foreground</key>
 				<string>#F8F8F0</string>
 			</dict>
@@ -272,7 +272,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string />
 				<key>foreground</key>
 				<string>#808000</string>
 			</dict>
@@ -338,79 +338,35 @@
 
 		<dict>
 			<key>name</key>
-			<string>SublimeLinter annotations</string>
+			<string>SublimeLinter gutter mark</string>
 			<key>scope</key>
-			<string>sublimelinter.notes</string>
+			<string>sublimelinter.gutter-mark</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#FFFFAA</string>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>SublimeLinter error outline</string>
+			<string>SublimeLinter error</string>
 			<key>scope</key>
-			<string>sublimelinter.outline.illegal</string>
+			<string>sublimelinter.mark.error</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#FF4A52</string>
+				<key>foreground</key>
+				<string>#D02000</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>SublimeLinter error underline</string>
+			<string>SublimeLinter warning</string>
 			<key>scope</key>
-			<string>sublimelinter.underline.illegal</string>
+			<string>sublimelinter.mark.warning</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#FF0000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SublimeLinter warning outline</string>
-			<key>scope</key>
-			<string>sublimelinter.outline.warning</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#DF9400</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SublimeLinter warning underline</string>
-			<key>scope</key>
-			<string>sublimelinter.underline.warning</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#FF0000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SublimeLinter violation outline</string>
-			<key>scope</key>
-			<string>sublimelinter.outline.violation</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#FFFFFF33</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SublimeLinter violation underline</string>
-			<key>scope</key>
-			<string>sublimelinter.underline.violation</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#FF0000</string>
+				<key>foreground</key>
+				<string>#DDB700</string>
 			</dict>
 		</dict>
 	</array>

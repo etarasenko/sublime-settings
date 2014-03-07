@@ -16,6 +16,7 @@ rm /tmp/SourceCodePro.zip
 fc-cache -fv
 
 h1 "Installing linters:"
+sudo apt-get install -y python-pip
 sudo pip install --upgrade flake8
 sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo apt-get update

@@ -18,7 +18,7 @@
 				<key>invisibles</key>
 				<string>#E0E0E0</string>
 				<key>lineHighlight</key>
-				<string>#A5A5A526</string>
+				<string>#FFFEEE</string>
 				<key>selection</key>
 				<string>#C2E8FF</string>
 				<key>selectionBorder</key>
@@ -74,7 +74,7 @@
 			<key>name</key>
 			<string>Number</string>
 			<key>scope</key>
-			<string>constant.numeric</string>
+			<string>constant.numeric, constant.other.color</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -151,11 +151,9 @@
 			<key>name</key>
 			<string>Tag name</string>
 			<key>scope</key>
-			<string>entity.name.tag</string>
+			<string>entity.name.tag, punctuation.definition.tag</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#6700B908</string>
 				<key>foreground</key>
 				<string>#6700B9</string>
 			</dict>
@@ -164,11 +162,11 @@
 			<key>name</key>
 			<string>Tag attribute</string>
 			<key>scope</key>
-			<string>entity.other.attribute-name, punctuation.definition.tag</string>
+			<string>entity.other.attribute-name</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6700B9</string>
+				<string>#808000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -251,7 +249,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#AE81FFA0</string>
+				<string>#808080</string>
 			</dict>
 		</dict>
 		<dict>
@@ -260,7 +258,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E6DB74</string>
+				<string>#339900</string>
 			</dict>
 		</dict>
 
@@ -273,6 +271,17 @@
 			<dict>
 				<key>fontStyle</key>
 				<string />
+				<key>foreground</key>
+				<string>#808000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ruby symbol</string>
+			<key>scope</key>
+			<string>constant.other.symbol.ruby</string>
+			<key>settings</key>
+			<dict>
 				<key>foreground</key>
 				<string>#808000</string>
 			</dict>
@@ -307,10 +316,8 @@
 			<string>entity.name.tag.css</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#6700B9</string>
 			</dict>
 		</dict>
 		<dict>

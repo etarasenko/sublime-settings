@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>My</string>
+	<string>Ergonomic</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -56,18 +56,18 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#808080</string>
+				<string>#8E908C</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Constant</string>
 			<key>scope</key>
-			<string>constant</string>
+			<string>constant, support.constant.property-value</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6700B9</string>
+				<string>#800080</string>
 			</dict>
 		</dict>
 		<dict>
@@ -96,7 +96,7 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword, storage</string>
+			<string>keyword, keyword.operator.logical, storage</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -105,13 +105,24 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Library</string>
+			<string>Operator</string>
 			<key>scope</key>
-			<string>#support</string>
+			<string>keyword.operator</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#808000</string>
+				<string>#2F6F9F</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Embedded punctuation</string>
+			<key>scope</key>
+			<string>punctuation.section.embedded</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2F6F9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -149,13 +160,24 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Tag name</string>
+			<string>Tag punctuation</string>
 			<key>scope</key>
-			<string>entity.name.tag, punctuation.definition.tag</string>
+			<string>punctuation.definition.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6700B9</string>
+				<string>#800080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag name</string>
+			<key>scope</key>
+			<string>entity.name.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800080</string>
 			</dict>
 		</dict>
 		<dict>
@@ -166,7 +188,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#808000</string>
+				<string>#A08000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -195,6 +217,55 @@
 				<string>#AE81FF</string>
 				<key>foreground</key>
 				<string>#F8F8F0</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Python decorator</string>
+			<key>scope</key>
+			<string>entity.name.function.decorator.python</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string />
+				<key>foreground</key>
+				<string>#A08000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ruby symbol</string>
+			<key>scope</key>
+			<string>constant.other.symbol.ruby</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A08000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CSS selector</string>
+			<key>scope</key>
+			<string>entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, entity.other.attribute-name.pseudo-class.css</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CSS property</string>
+			<key>scope</key>
+			<string>support.type.property-name</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
 			</dict>
 		</dict>
 
@@ -264,87 +335,6 @@
 
 		<dict>
 			<key>name</key>
-			<string>Python decorator</string>
-			<key>scope</key>
-			<string>entity.name.function.decorator.python</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string />
-				<key>foreground</key>
-				<string>#808000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Ruby symbol</string>
-			<key>scope</key>
-			<string>constant.other.symbol.ruby</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#808000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Section</string>
-			<key>scope</key>
-			<string>entity.name.section</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#000000</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
-			<string>CSS selector</string>
-			<key>scope</key>
-			<string>entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, entity.other.attribute-name.pseudo-class.css</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>CSS tag selector</string>
-			<key>scope</key>
-			<string>entity.name.tag.css</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#6700B9</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>CSS property</string>
-			<key>scope</key>
-			<string>support.type.property-name</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#808000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>CSS invalid comma</string>
-			<key>scope</key>
-			<string>invalid.bad-comma.css</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#FF0000</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>name</key>
 			<string>SublimeLinter gutter mark</string>
 			<key>scope</key>
 			<string>sublimelinter.gutter-mark</string>
@@ -378,6 +368,6 @@
 		</dict>
 	</array>
 	<key>uuid</key>
-	<string>12345678-ABCD-ABCD-ABCD-8C841C21347D</string>
+	<string>12345678-1234-1234-1234-123456789ABC</string>
 </dict>
 </plist>

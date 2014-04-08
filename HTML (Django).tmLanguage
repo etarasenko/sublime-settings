@@ -31,13 +31,21 @@
 			<string>{{</string>
 			<key>end</key>
 			<string>}}</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.python</string>
+				</dict>
+			</dict>
 			<key>name</key>
-			<string>storage.type.variable.django</string>
+			<string>source.python.django</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#template_filter</string>
+					<string>#filter</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -50,17 +58,25 @@
 			<string>{%</string>
 			<key>end</key>
 			<string>%}</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.python</string>
+				</dict>
+			</dict>
 			<key>name</key>
-			<string>storage.type.templatetag.django</string>
+			<string>source.python.django</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#template_tag</string>
+					<string>#tag</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#template_filter</string>
+					<string>#filter</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -75,25 +91,7 @@
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>template_filter</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>\b(add|addslashes|apnumber|capfirst|center|cut|date|default|default_if_none|dictsort|dictsortreversed|divisibleby|escape|escapejs|filesizeformat|first|fix_ampersands|floatformat|force_escape|get_digit|intcomma|intword|iriencode|join|last|length|length_is|linebreaks|linebreaksbr|linenumbers|ljust|localize|localtime|lower|make_list|markdown|naturalday|naturaltime|ordinal|phone2numeric|pluralize|pprint|random|removetags|restructuredtext|rjust|safe|safeseq|slice|slugify|stringformat|striptags|textile|time|timesince|timeutil|timezone|title|truncatechars|truncatewords|truncatewords_html|unlocalize|unordered_list|upper|urlencode|urlize|urlizetrunc|utc|wordcount|wordwrap|yesno)\b</string>
-					<key>name</key>
-					<string>keyword.control.filter.django</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>[a-zA-Z_][a-zA-Z0-9_.-]+</string>
-					<key>name</key>
-					<string>entity.name.section</string>
-				</dict>
-			</array>
-		</dict>
-		<key>template_tag</key>
+		<key>tag</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -102,6 +100,18 @@
 					<string>\b(as|autoescape|endautoescape|block|endblock|blocktrans|plural|endblocktrans|csrf_token|cycle|debug|extends|filter|endfilter|firstof|for|in|empty|endfor|get_available_languages|get_current_language|get_current_language_bidi|get_current_timezone|get_language_info|get_language_info_list|get_media_prefix|get_static_prefix|if|and|or|not|elif|else|endif|ifchanged|endifchanged|ifequal|endifequal|ifnotequal|endifnotequal|include|load|from|localize|endlocalize|localtime|endlocaltime|lorem|now|regroup|by|spaceless|endspaceless|ssi|static|templatetag|timezone|endtimezone|trans|url|widthratio|with|endwith)\b</string>
 					<key>name</key>
 					<string>keyword.control.tag.django</string>
+				</dict>
+			</array>
+		</dict>
+		<key>filter</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\b(add|addslashes|apnumber|capfirst|center|cut|date|default|default_if_none|dictsort|dictsortreversed|divisibleby|escape|escapejs|filesizeformat|first|fix_ampersands|floatformat|force_escape|get_digit|intcomma|intword|iriencode|join|last|length|length_is|linebreaks|linebreaksbr|linenumbers|ljust|localize|localtime|lower|make_list|markdown|naturalday|naturaltime|ordinal|phone2numeric|pluralize|pprint|random|removetags|restructuredtext|rjust|safe|safeseq|slice|slugify|stringformat|striptags|textile|time|timesince|timeutil|timezone|title|truncatechars|truncatewords|truncatewords_html|unlocalize|unordered_list|upper|urlencode|urlize|urlizetrunc|utc|wordcount|wordwrap|yesno)\b</string>
+					<key>name</key>
+					<string>keyword.control.filter.django</string>
 				</dict>
 			</array>
 		</dict>

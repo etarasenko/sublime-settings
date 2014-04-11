@@ -96,7 +96,7 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword, keyword.operator.logical, storage</string>
+			<string>keyword, storage</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -107,18 +107,7 @@
 			<key>name</key>
 			<string>Operator</string>
 			<key>scope</key>
-			<string>keyword.operator</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#2F6F9F</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Embedded punctuation</string>
-			<key>scope</key>
-			<string>punctuation.section.embedded</string>
+			<string>keyword.operator, punctuation.section.embedded</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -160,20 +149,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Tag punctuation</string>
-			<key>scope</key>
-			<string>punctuation.definition.tag</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#800080</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Tag name</string>
 			<key>scope</key>
-			<string>entity.name.tag</string>
+			<string>entity.name.tag, punctuation.definition.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -199,11 +177,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#F92672</string>
-				<key>fontStyle</key>
-				<string />
+				<string>#FF000020</string>
 				<key>foreground</key>
-				<string>#F8F8F0</string>
+				<string>#FF0000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -214,9 +190,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#AE81FF</string>
+				<string>#FF800020</string>
 				<key>foreground</key>
-				<string>#F8F8F0</string>
+				<string>#FF8000</string>
 			</dict>
 		</dict>
 
@@ -253,17 +229,6 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
-				<key>foreground</key>
-				<string>#000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>CSS property</string>
-			<key>scope</key>
-			<string>support.type.property-name</string>
-			<key>settings</key>
-			<dict>
 				<key>foreground</key>
 				<string>#000000</string>
 			</dict>

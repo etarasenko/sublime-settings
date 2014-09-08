@@ -63,7 +63,7 @@
 			<key>name</key>
 			<string>Constant</string>
 			<key>scope</key>
-			<string>constant.language, support.constant.property-value.css</string>
+			<string>constant, support.constant.property-value.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -231,6 +231,28 @@
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SQL name</string>
+			<key>scope</key>
+			<string>constant.other.database-name.sql, constant.other.table-name.sql</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SQL embedded name</string>
+			<key>scope</key>
+			<string>string constant.other.database-name.sql, string constant.other.table-name.sql</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#339900</string>
 			</dict>
 		</dict>
 

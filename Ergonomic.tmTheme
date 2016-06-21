@@ -63,7 +63,7 @@
 			<key>name</key>
 			<string>Constant</string>
 			<key>scope</key>
-			<string>constant, support.constant.property-value.css</string>
+			<string>constant.language, support.constant.property-value.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -107,11 +107,22 @@
 			<key>name</key>
 			<string>Operator</string>
 			<key>scope</key>
-			<string>keyword.operator, punctuation.section.embedded</string>
+			<string>keyword.operator</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#2F6F9F</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Embedded punctuation</string>
+			<key>scope</key>
+			<string>punctuation.section.embedded</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2F6F9F80</string>
 			</dict>
 		</dict>
 		<dict>
@@ -134,6 +145,8 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
+				<key>foreground</key>
+				<string>#000000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -151,11 +164,22 @@
 			<key>name</key>
 			<string>Tag name</string>
 			<key>scope</key>
-			<string>entity.name.tag, punctuation.definition.tag</string>
+			<string>entity.name.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#800080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag punctuation</string>
+			<key>scope</key>
+			<string>punctuation.definition.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#80008080</string>
 			</dict>
 		</dict>
 		<dict>
@@ -222,6 +246,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>JavaScript key</string>
+			<key>scope</key>
+			<string>constant.other.object.key.js string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A08000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>CSS selector</string>
 			<key>scope</key>
 			<string>entity.name.tag.css, entity.other.attribute-name.id.css, entity.other.attribute-name.class.css, entity.other.attribute-name.pseudo-class.css</string>
@@ -231,28 +266,6 @@
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SQL name</string>
-			<key>scope</key>
-			<string>constant.other.database-name.sql, constant.other.table-name.sql</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SQL embedded name</string>
-			<key>scope</key>
-			<string>string constant.other.database-name.sql, string constant.other.table-name.sql</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#339900</string>
 			</dict>
 		</dict>
 

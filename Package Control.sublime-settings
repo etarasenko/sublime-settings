@@ -1,12 +1,18 @@
 {
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
+		"Babel",
+		"Package Control",
 		"SublimeCodeIntel",
 		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-csslint",
 		"SublimeLinter-flake8",
-		"SublimeLinter-jshint",
-		"Theme - Soda"
+		"Theme - SoDaReloaded"
 	],
 	"repositories":
 	[

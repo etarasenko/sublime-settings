@@ -85,7 +85,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>string, keyword.other.template.begin.js, keyword.other.template.end.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -96,7 +96,7 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword, storage</string>
+			<string>keyword, storage, variable.language.super.js, variable.language.this.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -129,7 +129,7 @@
 			<key>name</key>
 			<string>Class name</string>
 			<key>scope</key>
-			<string>entity.name.type.class</string>
+			<string>entity.name.type.class, entity.name.class.js</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -140,7 +140,7 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>meta.function entity.name.function</string>
+			<string>meta.function entity.name.function, entity.name.function.js</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -252,7 +252,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A08000</string>
+				<string>#000000</string>
 			</dict>
 		</dict>
 		<dict>
